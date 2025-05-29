@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web-Hub</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body class="myContainer">
+    <h1 class="text-center">\Welcome to your/<br />\Web-Hub/</h1>
+<div class="todo-app">
+        <h2 style="color:black">TO-DO List <img src="~/lib/images/icon.png" /></h2>
+        <div class="row">
+            <button class="button" onclick="addToDo()">Add</button><input type="text" id="input-box1" placeholder="What to do..." />
+        </div>
+        <ul id="list-container1">
+        </ul>
+</div>
+<div class="notes-app">
+        <h2 style="color:black">Notes</h2>
+        <div class="row">
+            <button class="button" onclick="addNote()">Add</button><input type="text" id="input-box2" placeholder="Oh! Oh! Write that down!" />
+        </div>
+        <ul id="list-container2">
+        </ul>
+</div>
+<div class="links-app">
+    <h2 style="color:black">Links</h2>
+    <div class="row">
+        <button class="button" onclick="addLink()">Add</button><input type="text" id="input-box4" placeholder="Link title"/>|<input type="url" id="input-box3" placeholder="*whoosh*" />
+      </div>
+        <ul id="list-container3">
+            <li>
+            </li>
+        </ul>
+</div>
+<script src="~/js/site.js"></script>
+</body>
+</html>
+
